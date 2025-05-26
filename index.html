@@ -6,10 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="Description" content="Jordan King – Full-Stack Developer & UX Designer based in Jacksonville, FL. View resume, portfolio projects, and contact information.">
     <link rel="stylesheet" href="/css/main.css">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RH36G7P8VL"></script>
+
+    <!-- scripts -->
+     <script src="/js/script.js" defer></script>
     <script src="https://unpkg.com/hyperscript.org@0.9.7"></script>
     <script src="https://unpkg.com/htmx.org@2.0.4" integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+" crossorigin="anonymous"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RH36G7P8VL"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -57,12 +61,15 @@
 
                 <div class="content-container">
                     <div class="content">
-                        Hello, I’m Jordan, I am a hybrid Full-Stack Developer and UX designer.
-                        <br> 
-                        I graduated from the University of North Florida with a Bachelors in Interdisciplinary Studies with a focus in Digital Media/Humanities.
-                        <br>
-                        <br>
-                        This foundation gave me a unique skillset combining Adobe Creative tools with software development experience across multiple programming languages. I specialize in creating clean, user-focused web applications and interfaces
+                        <p>
+                            Hello, I’m Jordan, I am a hybrid Full-Stack Developer and UX designer.
+                            <br>
+                            I graduated from the University of North Florida with a Bachelors in Interdisciplinary Studies with a focus in Digital Media/Humanities.
+                        </p>                        
+                        <p class="toggleContent hide">
+                            This foundation gave me a unique skillset combining Adobe Creative tools with software development experience across multiple programming languages. I specialize in creating clean, user-focused web applications and interfaces
+                        </p>                            
+                        <button class="toggleBtn">More</button>
                     </div>
                     <!-- end content -->
 
@@ -80,12 +87,13 @@
                         <h3 class="content-sub-title">Web Developer</h3>
                         <strong>Contract Web Developer </strong>
                         <em>Jan 2025 – Present</em>
-                        <ul>
+                        <ul class="toggleContent hide">
                             <li>Designed, developed, and launched client websites with full domain setup and hosting configuration.</li>
                             <li>Implemented on-page SEO strategies, including optimized metadata, headings, and keywords to improve search engine visibility.</li>
                             <li>Created responsive layouts using HTML, CSS, and JavaScript to ensure seamless functionality across all screen sizes and devices.</li>
                             <li>Provided ongoing website maintenance, content updates, and performance enhancements based on client feedback and analytics.</li>
                           </ul>
+                          <button class="toggleBtn">More</button>
                     </div>
                     <!-- end content -->
 
@@ -93,7 +101,7 @@
                         <h3 class="content-sub-title">Front-End Developer (Academic Projects)</h3>
                         <strong>University of North Florida – Course Projects</strong>
                         <em>August 2024 – December 2024</em>
-                        <ul>
+                        <ul class="toggleContent hide">
                             <li>Took ownership of front-end development in a group project focused on converting a paper-based application form into a responsive web application.
                             </li>
                             <li>Built a fully functional interface using HTML, Bootstrap, and JavaScript; implemented client-side validation to provide real-time user feedback and reduce form submission errors.
@@ -103,6 +111,7 @@
                             <li>Managed GitHub version control and resolved merge conflicts after a teammate pushed outdated code, maintaining the integrity of the final version.
                             </li>
                         </ul>
+                        <button class="toggleBtn">More</button>
                     </div>
                     <!-- end content -->
 
@@ -110,13 +119,14 @@
                         <h3 class="content-sub-title">Graphic Designer</h3>
                         <strong>Florida State College at Jacksonville – Student Engagement</strong>
                         <em>October 2019 – February 2020</em>
-                        <ul>
+                        <ul class="toggleContent hide">
                             <li>Created visually compelling flyers, posters, and digital graphics to promote student engagement events and campus activities.</li>
                             <li>Collaborated with student organizations and faculty to design promotional materials tailored to event goals and target audiences.</li>
                             <li>Managed multiple design requests simultaneously while meeting strict deadlines and maintaining brand consistency.</li>
                             <li>Utilized Adobe Creative Suite (Photoshop, Illustrator, InDesign) to produce both print and digital media assets.</li>
                             <li>Contributed to the visual branding of college-wide campaigns, enhancing student participation and visibility of campus programs.</li>
                           </ul>
+                          <button class="toggleBtn">More</button>
                           
                     </div>
                     <!-- end content -->
@@ -125,7 +135,7 @@
                         <h3 class="content-sub-title">Full-Stack Developer (Capstone UI/Database Integration)</h3>
                         <strong>University of North Florida – Web Application Development</strong>
                         <em>May 2024 – July 2024</em>
-                        <ul>
+                        <ul class="toggleContent hide">
                             <li>Reconstructed the IBM website interface for a project simulating UI/UX improvements and backend integration for a corporate site..
                             </li>
                             <li>Developed and styled the full user interface, then built and connected a functional SQL database to support user data handling within an ASP.NET (C#) environment.
@@ -135,6 +145,7 @@
                             <li>Collaborated with group members responsible for documentation and case study presentation while leading the technical execution of both front-end and database components.
                             </li>
                         </ul>
+                        <button class="toggleBtn">More</button>
                     </div>
                     <!-- end content -->
 
