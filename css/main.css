@@ -208,6 +208,12 @@
        
     }
 
+
+    /* education section */
+    .education{
+        display: none;
+    }
+
     /* experience section */
     .experience .content{
         background: var(--transparent-bg);
