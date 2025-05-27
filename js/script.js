@@ -1,3 +1,8 @@
+const resumeDownload = document.getElementById("resumeDownload");
+resumeDownload.addEventListener("click", () => {
+  
+})
+
 document.querySelectorAll(".toggleBtn").forEach((button) => {
   button.addEventListener("click", () => {
     const wrapper = button.closest(".content"); 

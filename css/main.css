@@ -23,7 +23,7 @@
     }
 
 
-    button{
+    button, .button{
         background: var(--transparent-bg);
         padding: 10px;
         border-radius: 5px;
@@ -32,7 +32,7 @@
         max-width: 200px;
         min-width: 100px;
     }
-
+    .button:hover,
     button:hover{
         background-color: var(--body-bg);
         color: white;
@@ -210,10 +210,7 @@
 
 
     /* education section */
-    /* .education{
-        display: none;
-    } */
-
+ 
     /* experience section */
     .experience .content,
     .education .content{
@@ -397,7 +394,7 @@
     }
 
 
-    .modal-content-container h1{
+    .modal-title{
         color: rgba(0, 245, 53, 0.651);
         background-color: #0a000062;
         padding: 20px;
