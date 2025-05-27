@@ -210,12 +210,13 @@
 
 
     /* education section */
-    .education{
+    /* .education{
         display: none;
-    }
+    } */
 
     /* experience section */
-    .experience .content{
+    .experience .content,
+    .education .content{
         background: var(--transparent-bg);
         border: 2px solid white;
         border-radius: 20px;
