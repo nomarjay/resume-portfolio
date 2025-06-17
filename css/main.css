@@ -289,6 +289,12 @@
     .container{
         grid-template-rows: auto auto auto;
         padding: 0;
+        width: 100%;
+    }
+
+    header{
+        margin-top: 20px;
+        height: fit-content;
     }
 
     .flex-end{
