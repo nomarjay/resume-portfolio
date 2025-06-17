@@ -244,6 +244,7 @@
             & img{
                 width: 25px;
                 height: 25px;
+                text-align: center;
             }
         }
 
@@ -329,5 +330,10 @@
 
     section{
         grid-column: span 4;
+        display: flex;
+        padding: 0px 10px;
+        text-align: center;
+        flex-direction: column
+
     }
    }
