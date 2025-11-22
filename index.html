@@ -1,355 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="Description" content="Jordan King – Full-Stack Developer & UX Designer based in Jacksonville, FL. View resume, portfolio projects, and contact information.">
-    <link rel="stylesheet" href="/css/main.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Jordan King - Full Stack Developer & Designer portfolio showcasing web development projects, skills in React, Node.js, Python, and professional experience."/>
+<meta name="keywords" content="Full Stack Developer, Web Developer, UI/UX Designer, React, Node.js, Python, Portfolio, Jordan King">
+<meta name="author" content="Jordan King">
+<meta name="robots" content="index, follow">
 
-    <!-- scripts -->
-     <script src="/js/script.js" defer></script>
-    <script src="https://unpkg.com/hyperscript.org@0.9.7"></script>
-    <script src="https://unpkg.com/htmx.org@2.0.4" integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+" crossorigin="anonymous"></script>
+<!-- Open Graph / Social Media Meta Tags -->
+<meta property="og:title" content="Jordan King - Full Stack Developer & Designer">
+<meta property="og:description" content="Portfolio showcasing web development projects and technical expertise">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.jordanking.io">
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RH36G7P8VL"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
 
-        gtag('config', 'G-RH36G7P8VL');
-    </script>
-    <title>Jordan King Resume</title>
+<!-- Twitter Card Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Jordan King - Full Stack Developer & Designer">
+<meta name="twitter:description" content="Portfolio showcasing web development projects and technical expertise">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://www.jordanking.io">
+
+<!-- css -->
+<link rel="stylesheet" href="/css/style.css">
+
+<!-- Bootstrap/Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+<!-- Preconnect for performance -->
+<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+<title>Jordan King - Full Stack Developer & Designer Portfolio</title>
+
+<!-- Structured Data for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Jordan King",
+  "url": "https://www.jordanking.com",
+  "jobTitle": "Full Stack Developer & Designer",
+  "description": "Full Stack Developer specializing in Web Development, UI/UX design, and Digital Media",
+  "sameAs": [
+    "https://github.com/nomarjay",
+    "https://linkedin.com/in/jk24"
+  ]
+}
+</script>
 </head>
 <body>
-        <div class="container">
+  <!-- Skip to main content link for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-            <header>
-                <div class="profile-container">
-                    <div class="profile-content">
-                        <img src="/images/profile-pic.jpg" alt="" class="profile-pic">
-                        <div class="profile-subheading">
-                            <h1>Jordan King</h1>
-                            <p><strong>Full-Stack Developer | UX Designer</strong></p>
-                            <button class="disabled" >Download Resume</button>
-                        </div>
-                    </div>
-                    <!-- end profile content -->
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home" aria-label="Jordan King - Home">Jordan King</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-                    <div class="profile-content left-align">
-                        <div class="status">
-                            <strong>Status</strong>
-                            Available for hire
-                        </div>
-
-                        <div class="location">
-                            <strong>Location</strong>
-                            Jacksonville, FL
-                        </div>
-                    </div>
-                    <!-- end status -->
-
-                </div>   
-                <!-- end profile container -->
-            </header>
-            <!-- end header -->
-
-            <section class="bio">
-                <h2 class="content-title">Bio</h2>
-
-                <div class="content-container">
-                    <div class="content">
-                        <strong>Hello, I’m Jordan, I am a hybrid Full-Stack Developer and UX designer.</strong>
-                        <p>I graduated from the University of North Florida with a Bachelors in Interdisciplinary Studies with a focus in Digital Media/Humanities.
-                        </p>                        
-                        <p class="toggleContent hide">
-                            This foundation gave me a unique skillset combining Adobe Creative tools with software development experience across multiple programming languages. I specialize in creating clean, user-focused web applications and interfaces
-                        </p>                            
-                        <button class="toggleBtn">More</button>
-                    </div>
-                    <!-- end content -->
-
-                </div>
-                <!-- end content container -->
-            </section>
-            <!-- end bio -->
-
-
-            <section class="experience">
-                <h2 class="content-title">Experience</h2>
-
-                <div class="content-container">
-                    <div class="content">
-                        <h3 class="content-sub-title">Web Developer</h3>
-                        <strong>Contract Web Developer </strong>
-                        <em>Jan 2025 – Present</em>
-                        <ul class="toggleContent hide">
-                            <li>Designed, developed, and launched client websites with full domain setup and hosting configuration.</li>
-                            <li>Implemented on-page SEO strategies, including optimized metadata, headings, and keywords to improve search engine visibility.</li>
-                            <li>Created responsive layouts using HTML, CSS, and JavaScript to ensure seamless functionality across all screen sizes and devices.</li>
-                            <li>Provided ongoing website maintenance, content updates, and performance enhancements based on client feedback and analytics.</li>
-                          </ul>
-                          <button class="toggleBtn">More</button>
-                    </div>
-                    <!-- end content -->
-
-                    <div class="content">
-                        <h3 class="content-sub-title">Front-End Developer (Academic Projects)</h3>
-                        <strong>University of North Florida – Course Projects</strong>
-                        <em>August 2024 – December 2024</em>
-                        <ul class="toggleContent hide">
-                            <li>Took ownership of front-end development in a group project focused on converting a paper-based application form into a responsive web application.
-                            </li>
-                            <li>Built a fully functional interface using HTML, Bootstrap, and JavaScript; implemented client-side validation to provide real-time user feedback and reduce form submission errors.
-                            </li>
-                            <li>Collaborated with a teammate responsible for UX case study analysis; incorporated feedback into interface revisions to ensure alignment with accessibility and usability standards.
-                            </li>
-                            <li>Managed GitHub version control and resolved merge conflicts after a teammate pushed outdated code, maintaining the integrity of the final version.
-                            </li>
-                        </ul>
-                        <button class="toggleBtn">More</button>
-                    </div>
-                    <!-- end content -->
-
-                    <div class="content">
-                        <h3 class="content-sub-title">Graphic Designer</h3>
-                        <strong>Florida State College at Jacksonville – Student Engagement</strong>
-                        <em>October 2019 – February 2020</em>
-                        <ul class="toggleContent hide">
-                            <li>Created visually compelling flyers, posters, and digital graphics to promote student engagement events and campus activities.</li>
-                            <li>Collaborated with student organizations and faculty to design promotional materials tailored to event goals and target audiences.</li>
-                            <li>Managed multiple design requests simultaneously while meeting strict deadlines and maintaining brand consistency.</li>
-                            <li>Utilized Adobe Creative Suite (Photoshop, Illustrator, InDesign) to produce both print and digital media assets.</li>
-                            <li>Contributed to the visual branding of college-wide campaigns, enhancing student participation and visibility of campus programs.</li>
-                          </ul>
-                          <button class="toggleBtn">More</button>
-                          
-                    </div>
-                    <!-- end content -->
-
-                    <div class="content">
-                        <h3 class="content-sub-title">Full-Stack Developer (Capstone UI/Database Integration)</h3>
-                        <strong>University of North Florida – Web Application Development</strong>
-                        <em>May 2024 – July 2024</em>
-                        <ul class="toggleContent hide">
-                            <li>Reconstructed the IBM website interface for a project simulating UI/UX improvements and backend integration for a corporate site..
-                            </li>
-                            <li>Developed and styled the full user interface, then built and connected a functional SQL database to support user data handling within an ASP.NET (C#) environment.
-                            </li>
-                            <li>Designed database schemas, established relationships, and tested CRUD operations to ensure seamless integration between front-end and back-end systems.
-                            </li>
-                            <li>Collaborated with group members responsible for documentation and case study presentation while leading the technical execution of both front-end and database components.
-                            </li>
-                        </ul>
-                        <button class="toggleBtn">More</button>
-                    </div>
-                    <!-- end content -->
-
-                </div>  
-                <!-- end content container -->
-            </section>
-
-            <section class="skills">
-                <div class="content-container">
-
-                    <div class="content">
-                        <h2 class="content-title">Programming Languages</h2>
-                        <ul class="icon-container">
-                            <li>Javascript
-                                <img src="/images/icons8-javascript.svg" alt="" class="icon">
-                            </li>
-                            <li>Bootstrap
-                                <img src="/images/icons8-bootstrap-500.svg" alt="" class="icon">
-                            </li>
-                            <li>React
-                                <img src="/images/icons8-react.svg" alt="" class="icon">
-                            </li>
-                            <li>Spring Boot
-                                <img src="/images/icons8-spring-boot.svg" alt="" class="icon">
-                            </li>
-                            <li>XML
-                                <img src="/images/xml-svgrepo-com.svg" alt="" class="icon">
-                            </li>
-                            <li>Thymeleaf
-                                <img src="/images/icons8-thymeleaf-480.svg" alt="" class="icon">
-                            </li>
-                            <li>Java
-                                <img src="images/icons8-java-500.svg" alt="" class="icon">
-                            </li>
-                            <li>Python
-                                <img src="/images/icons8-python-500.svg" alt="" class="icon">
-                            </li>
-                            <li>C
-                                <img src="/images/icons8-c-programming-500.svg" alt="" class="icon">
-                            </li>
-                            <li>MySQL
-                                <img src="/images/icons8-mysql-logo-500.svg" alt="" class="icon">
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- end content -->
-
-                    <div class="content">
-                        <h2 class="content-title">Design Tools</h2>
-                        <ul class="icon-container">
-                            <li>UI/UX Design
-                                <img src="/images/ux-design-svgrepo-com.svg"  class="icon" alt="">
-                            </li>
-                            <li>Figma
-                                <img src="/images/icons8-figma-500.svg" alt="" class="icon">
-                            </li>
-                            <li>Adobe XD
-                                <img src="/images/icons8-adobe-xd-500.svg" alt="" class="icon">
-                            </li>
-                            <li>Canva
-                                <img src="/images/icons8-canva-500.svg" alt="" class="icon">
-                            </li>
-                            <li>Photoshop
-                                <img src="/images/icons8-photoshop-500.svg" alt="" class="icon">
-                            </li>
-                            <li>Illustrator
-                                <img src="/images/icons8-illustrator-500.svg" alt="" class="icon">
-                            </li>
-                            <li>Premier Pro
-                                <img src="/images/icons8-adobe-premiere-pro-500.svg" alt="" class="icon">
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- end content -->
-                    
-                </div>
-                <!-- end content container -->
-            </section>
-
-            <section class="projects">
-                <h2 class="content-title">Projects</h2>
-
-                <div class="content-container">
-
-                    <div class="content">
-                        <h3 class="content-sub-title">Full-Stack Projects</h3>
-
-                        <div class="icon-container">
-                            <img src="/images/icons8-thymeleaf-480.svg" alt="" class="icon">
-                            <img src="/images/icons8-java-500.svg" alt="" class="icon">
-                            <img src="/images/icons8-spring-boot.svg" alt="" class="icon">
-                            <img src="/images/icons8-react.svg" alt="" class="icon">
-                        </div>
-
-                        <button hx-get="/pages/fullstackModal.html"
-                                hx-target="body"
-                                hx-swap="beforeend">
-                                View
-                        </button>
-                    </div>
-                    <!-- end content -->
-
-                    <div class="content">
-                        <h3 class="content-sub-title">Frontend Projects</h3>
-
-                        <div class="icon-container">
-                            <img src="/images/icons8-bootstrap-500.svg" alt="" class="icon">
-                            <img src="/images/icons8-react.svg" alt="" class="icon">
-                            <img src="/images/icons8-javascript.svg" alt="" class="icon">
-                        </div>
-
-                        <button hx-get="/pages/frontendModal.html"
-                                hx-target="body"
-                                hx-swap="beforeend">
-                                View
-                        </button>
-                    </div>
-                    <!-- end content -->
-
-                    <div class="content">                        
-                        <h3 class="content-sub-title">UI Projects</h3>
-
-                        <div class="icon-container">
-                            <img src="/images/icons8-adobe-xd-500.svg" alt="" class="icon">
-                            <img src="/images/icons8-figma-500.svg" alt="" class="icon">
-                        </div>
-
-                        <button hx-get="/pages/uiModal.html"
-                                hx-target="body"
-                                hx-swap="beforeend">
-                                View
-                        </button>
-                    </div>
-                    <!-- end content -->
-
-                    <div class="content">
-                        <h3 class="content-sub-title">Mini Projects</h3>
-
-                        <div class="icon-container">
-                            <img src="/images/icons8-c-programming-500.svg" alt="" class="icon">
-                            <img src="/images/icons8-java-500.svg" alt="" class="icon">
-                            <img src="/images/xml-svgrepo-com.svg" alt="" class="icon">
-                            <img src="/images/icons8-python-500.svg" alt="" class="icon">
-                        </div>
-
-                        <button hx-get="/pages/miniProjectsModal.html"
-                                hx-target="body"
-                                hx-swap="beforeend">
-                                View
-                        </button>
-                    </div>
-                    <!-- end content -->
-
-                </div>
-                <!-- end content container -->
-            </section>
-
-            <section class="contact">
-                <h2 class="content-title">Contact</h2>
-
-                <div class="content-container">
-                    <div class="content">
-                        <form method="get" id="form">
-
-                            <div class="form-element">
-                              <label for="fname">First Name </label>
-                              <input type="text" name="fname" id="fname" required />
-                            </div>
-
-                            <div class="form-element">
-                              <label for="lname">Last Name </label>
-                              <input type="text" name="lname" id="lname" required />
-                            </div>
-
-                            <div class="form-element">
-                              <label for="company">Company Name </label>
-                              <input type="text" name="company" id="company" required />
-                            </div>
-
-                            <div class="form-element">
-                              <label for="email">Email </label>
-                              <input type="email" name="email" id="email" required />
-                            </div>
-
-                            <div class="form-element">
-                              <label for="phone">Phone </label>
-                              <input type="tel" name="phone" id="phone" required />
-                            </div>
-
-                            <div class="form-element">
-                              <label for="message">Message </label>
-                              <textarea name="message" id="message"></textarea>
-                            </div>
-
-                            <div class="form-element">
-                              <button type="submit" value="Submit">Submit</button>
-                            </div>
-                        </form>
-                        <!-- end form -->
-                    </div>
-                    <!-- end content -->
-
-                </div>
-                <!-- end content container -->
-            </section>
-                        
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section id="home" class="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8 hero-content">
+            <h1 id="hero-heading" class="display-3 fw-bold mb-3">Hi, I'm <span style="color: var(--accent);">Jordan King</span></h1>
+            <h2 class="mb-4 h3" style="color: var(--text-secondary);">Full Stack Developer & Designer</h2>
+            <p class="lead mb-4" style="color: var(--text-secondary);">
+              Passionate about creating elegant solutions to complex problems. 
+              Specialized in Web Development, UI/UX design, and Digital Media.
+            </p>
+            <nav aria-label="Social media links">
+              <div class="social-links mb-4">
+                <a href="https://github.com/nomarjay" aria-label="GitHub profile" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i></a>
+                <a href="https://linkedin.com/in/jk24" aria-label="LinkedIn profile" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                <a href="mailto:jordanrking24@gmail.com" aria-label="Email Jordan King"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+              </div>
+            </nav>
+            <a href="#contact" class="btn btn-primary btn-lg">Get In Touch</a>
+            <a href="/assets/Jordan_King_Resume.pdf" class="btn btn-outline-light btn-lg ms-3" download aria-label="Download resume PDF">Download Resume</a>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section" aria-labelledby="education-heading">
+      <div class="container">
+        <h2 id="education-heading" class="section-title">Education</h2>
+        <!-- start row -->
+        <div class="row mt-5">
+          <div class="col-lg-6 mb-4">
+            <article class="timeline-item">
+                <h3 class="mb-2">University of North Florida</h3>
+                <p class="mb-2 accent">Interdisciplinary Studies</p>
+                <p class="mb-2"><time datetime="2023">2023</time> - <time datetime="2024">2024</time></p>
+                <p>Focused on software development, social media management, and UI design </p>
+                <ul>
+                  <strong>Notes</strong>
+                  <li>Dean's list</li>
+                  <li>Earned SEO certification</li>
+                  <li>Earned AI certification</li>
+                </ul>         
+            </article>
+          </div>
+         
+          <div class="col-lg-6 mb-4">
+            <article class="timeline-item">
+                <h3 class="mb-2">University of Central Florida</h3>
+                <p class="mb-2 accent">Digital Media</p>
+                <p class="mb-2"><time datetime="2021">2021</time> - <time datetime="2022">2022</time></p>
+                <p>Focused on web design, social media, and digital media </p>
+                <ul>
+                  <strong>Notes</strong>
+                  <li>Tau Sigma Theta Honor Society</li>
+                  <li>Earned Award of Excellence in Action
+                    <small>(3.5+ GPA recognition)</small>
+                  </li>
+                </ul>         
+            </article>
+          </div>
+         
+        </div>
+        <!-- end row -->
+         
+        <!-- start row -->
+        <div class="row mt-5">
+          <div class="col-lg-6 mb-4">
+            <article class="timeline-item">
+                <h3 class="mb-2"> Florida State College at Jacksonville </h3>
+                <p class="mb-2 accent">Digital Media / Graphic Design</p>
+                <p class="mb-2"><time datetime="2019">2019</time> - <time datetime="2021">2021</time></p>
+                <p>Focused on graphic design, UI design, and digital media </p>
+                <ul>
+                  <strong>Notes</strong>
+                  <li>Presidents list</li>
+                  <li>Earned Graphic Design certification</li>
+                </ul>         
+            </article>
+          </div>
+         
+          <div class="col-lg-6 mb-4">
+            <article class="timeline-item">
+                <h3 class="mb-2"> St John's River State College </h3>
+                <p class="mb-2 accent">General Studies</p>
+                <p class="mb-2"><time datetime="2014">2014</time> - <time datetime="2017">2017</time></p>
+                <p>Introduction to graphic design, programming, and general studies</p>
+                <ul>
+                  <strong>Notes</strong>
+                  <li>Phi Theta Kappa Honor Society</li>
+                  <li>Vice President of Spanish Club</li>
+                </ul>         
+            </article>
+          </div>         
+        </div>
+        <!-- end row -->
+         
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section" aria-labelledby="skills-heading">
+      <div class="container">
+        <h2 id="skills-heading" class="section-title">Skills</h2>
+        <div class="row mt-5">
+          <div class="col-lg-4 mb-4">
+            <article class="card p-4">
+              <h3 class="card-title mb-3 h4"><i class="fas fa-code me-2" aria-hidden="true"></i>Frontend</h3>
+              <div role="list" aria-label="Frontend skills">
+                <span class="skill-badge" role="listitem">HTML5</span>
+                <span class="skill-badge" role="listitem">CSS3</span>
+                <span class="skill-badge" role="listitem">JavaScript</span>
+                <span class="skill-badge" role="listitem">React</span>
+                <span class="skill-badge" role="listitem">Vue.js</span>
+                <span class="skill-badge" role="listitem">Bootstrap</span>
+                <span class="skill-badge" role="listitem">Tailwind</span>
+              </div>
+            </article>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <article class="card p-4">
+              <h3 class="card-title mb-3 h4"><i class="fas fa-server me-2" aria-hidden="true"></i>Backend</h3>
+              <div role="list" aria-label="Backend skills">
+                <span class="skill-badge" role="listitem">C#</span>
+                <span class="skill-badge" role="listitem">Python</span>
+                <span class="skill-badge" role="listitem">Java</span>
+                <span class="skill-badge" role="listitem">Spring Boot</span>
+                <span class="skill-badge" role="listitem">SQL</span>
+                <span class="skill-badge" role="listitem">MVC</span>
+                <span class="skill-badge" role="listitem">REST APIs</span>
+              </div>
+            </article>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <article class="card p-4">
+              <h3 class="card-title mb-3 h4"><i class="fas fa-tools me-2" aria-hidden="true"></i>Tools & Others</h3>
+              <div role="list" aria-label="Tools and other skills">
+                <span class="skill-badge" role="listitem">Github</span>
+                <span class="skill-badge" role="listitem">Docker</span>
+                <span class="skill-badge" role="listitem">Hostinger</span>
+                <span class="skill-badge" role="listitem">Adobe XD</span>
+                <span class="skill-badge" role="listitem">Figma</span>
+                <span class="skill-badge" role="listitem">Agile</span>
+                <span class="skill-badge" role="listitem">Photoshop</span>
+                <span class="skill-badge" role="listitem">Illustrator</span>
+                <span class="skill-badge" role="listitem">Premier Pro</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section" aria-labelledby="projects-heading">
+      <div class="container">
+        <h2 id="projects-heading" class="section-title">Projects</h2>
+        <div class="row mt-5">
+          <div class="col-lg-4 mb-4">
+            <article class="card p-4">
+              <h3 class="card-title mb-3 h4">Rylans Way</h3>
+              <p class="mb-3" style="color: var(--text-secondary);">
+                Rylan’s Way is a nonprofit website I designed with a focus on clarity, accessibility, and user-friendly navigation. The project demonstrates my ability to translate an organization’s mission into a modern, responsive web experience.
+              </p>
+              <div class="mb-3" role="list" aria-label="Technologies used">
+                <span class="skill-badge" role="listitem">Bootstrap</span>
+                <span class="skill-badge" role="listitem">JavaScript</span>
+                <span class="skill-badge" role="listitem">HTML</span>
+                <span class="skill-badge" role="listitem">CSS</span>
+              </div>
+              <a href="https://www.rylansway.com" target="_blank" class="btn btn-primary btn-sm">View Project</a>
+            </article>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <article class="card p-4">
+              <h3 class="card-title mb-3 h4">Louie's Car Stereo</h3>
+              <p class="mb-3" style="color: var(--text-secondary);">
+                I developed the Louie’s Car Stereo website as a fully frontend, HTMX-powered experience emphasizing simple navigation, clear product displays, and responsive UI behavior. The site delivers dynamic updates and smooth interactions while remaining lightweight and easy to maintain.
+              </p>
+              <div class="mb-3" role="list" aria-label="Technologies used">
+                <span class="skill-badge" role="listitem">HTML</span>
+                <span class="skill-badge" role="listitem">CSS</span>
+                <span class="skill-badge" role="listitem">JavaScript</span>
+                <span class="skill-badge" role="listitem">HTMX</span>
+              </div>
+              <a href="https://louiescarstereo.netlify.app/" target="_blank" class="btn btn-primary btn-sm">View Project</a>
+            </article>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <article class="card p-4">
+              <h3 class="card-title mb-3 h4">Stylecutz Barber Shop</h3>
+              <p class="mb-3" style="color: var(--text-secondary);">
+                Style Cuts Barbershop is a fully frontend, HTMX-enhanced website built with a focus on responsiveness and clean UI design. It highlights services and pricing while delivering dynamic, framework-free interactivity.
+              </p>
+              <div class="mb-3" role="list" aria-label="Technologies used">
+                <span class="skill-badge" role="listitem">HTML</span>
+                <span class="skill-badge" role="listitem">Tailwind CSS</span>
+                <span class="skill-badge" role="listitem">JavaScript</span>
+                <span class="skill-badge" role="listitem">Vue.js</span>
+
+              </div>
+              <a href="#" class="btn btn-primary btn-sm disabled">Coming Soon </a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section text-primary" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 id="contact-heading" class="section-title">Contact</h2>
+        <div class="row mt-5">
+          <div class="col-lg-6 mb-4">
+            <div class="contact-info mb-4">
+              <h3 class="mb-3 h4">Get In Touch</h3>
+              <p style="color: var(--text-secondary);">
+                I'm always open to discussing new projects, creative ideas, 
+                or opportunities to be part of your visions.
+              </p>
+            </div>
+            <address>
+              <div class="contact-info mb-3">
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+                <strong>Email:</strong> <a href="mailto:jordanrking24@gmail.com" class="text-decoration-none">jordanrking24@gmail.com</a>
+              </div>
+              <div class="contact-info mb-3">
+                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                <strong>Location:</strong> Jacksonville, FL
+              </div>
+              <div class="contact-info">
+                <i class="fas fa-globe" aria-hidden="true"></i>
+                <strong>Website:</strong> <a href="https://www.jordanking.io" class="text-decoration-none" style="color: var(--text-primary);" target="_blank" rel="noopener noreferrer">www.jordanking.io</a>
+              </div>
+            </address>
+          </div>
+          <div class="col-lg-6">
+            <div class="card p-4">
+              <h3 class="card-title mb-3 h4">Send a Message</h3>
+              <form action="/submit-form" method="POST" aria-label="Contact form">
+                <div class="mb-3">
+                  <label for="contact-name" class="visually-hidden">Your Name</label>
+                  <input type="text" id="contact-name" name="name" class="form-control border-secondary" placeholder="Your Name" required aria-required="true">
+                </div>
+                <div class="mb-3">
+                  <label for="contact-email" class="visually-hidden">Your Email</label>
+                  <input type="email" id="contact-email" name="email" class="form-control   border-secondary" placeholder="Your Email" required aria-required="true">
+                </div>
+                <div class="mb-3">
+                  <label for="contact-message" class="visually-hidden">Your Message</label>
+                  <textarea id="contact-message" name="message" class="form-control border-secondary" rows="5" placeholder="Your Message" required aria-required="true"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <div class="container">
+      <p class="mb-2">&copy; <time datetime="2025">2025</time> www.jordanking.io <br> All Rights Reserved.</p>
+      <nav aria-label="Footer social media links">
+        <div class="social-links">
+          <a href="https://github.com/nomarjay" aria-label="GitHub profile" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i></a>
+          <a href="https://linkedin.com/in/jk24" aria-label="LinkedIn profile" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+          <a href="mailto:jordan@example.com" aria-label="Email Jordan King"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+        </div>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- js -->
+  <script src="/scripts/"></script>
+  
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
 </body>
 </html>
