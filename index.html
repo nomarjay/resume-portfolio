@@ -25,56 +25,330 @@
 </head>
 <body>
         <div class="container">
-           <header>
-                <div class="flex-start">
-                    <img src="/images/profile-pic.jpg" alt="" class="profile-pic">
-                    <div>
-                        <h1>Jordan King</h1>
-                        <p><strong>Designer | Developer</strong></p>
-                        <a href="/assets/resume.pdf" target="_blank">Resume Download</a>
-                    </div>
-                </div>
 
-                <div class="flex-end">
-                    <div>
-                        <strong>Status</strong>
-                        Available for hire
+            <header>
+                <div class="profile-container">
+                    <div class="profile-content">
+                        <img src="/images/profile-pic.jpg" alt="" class="profile-pic">
+                        <div class="profile-subheading">
+                            <h1>Jordan King</h1>
+                            <p><strong>Full-Stack Developer | UX Designer</strong></p>
+                            <button class="disabled" >Download Resume</button>
+                        </div>
                     </div>
-                    <div>
-                        <strong>Location</strong>
-                        Jacksonville, FL
-                    </div>
-                </div>
+                    <!-- end profile content -->
 
+                    <div class="profile-content left-align">
+                        <div class="status">
+                            <strong>Status</strong>
+                            Available for hire
+                        </div>
+
+                        <div class="location">
+                            <strong>Location</strong>
+                            Jacksonville, FL
+                        </div>
+                    </div>
+                    <!-- end status -->
+
+                </div>   
+                <!-- end profile container -->
             </header>
             <!-- end header -->
 
+            <section class="bio">
+                <h2 class="content-title">Bio</h2>
 
-            <!-- navbar -->
-            <nav>
-                <button hx-get="/pages/bio.html" hx-target="#content" hx-swap="innerHTML">
-                    Bio
-                </button>
+                <div class="content-container">
+                    <div class="content">
+                        <strong>Hello, I’m Jordan, I am a hybrid Full-Stack Developer and UX designer.</strong>
+                        <p>I graduated from the University of North Florida with a Bachelors in Interdisciplinary Studies with a focus in Digital Media/Humanities.
+                        </p>                        
+                        <p class="toggleContent hide">
+                            This foundation gave me a unique skillset combining Adobe Creative tools with software development experience across multiple programming languages. I specialize in creating clean, user-focused web applications and interfaces
+                        </p>                            
+                        <button class="toggleBtn">More</button>
+                    </div>
+                    <!-- end content -->
 
-                <button hx-get="/pages/education.html" hx-target="#content" hx-swap="innerHTML">
-                    Education
-                </button>
+                </div>
+                <!-- end content container -->
+            </section>
+            <!-- end bio -->
 
-                <button hx-get="/pages/skills.html" hx-target="#content" hx-swap="innerHTML">
-                    Skills
-                </button>
 
-                <button hx-get="/pages/portfolio.html" hx-target="#content" hx-swap="innerHTML">
-                    Portfolio
-                 </button>
+            <section class="experience">
+                <h2 class="content-title">Experience</h2>
 
-            </nav>
-            <!-- end navbar -->                
+                <div class="content-container">
+                    <div class="content">
+                        <h3 class="content-sub-title">Web Developer</h3>
+                        <strong>Contract Web Developer </strong>
+                        <em>Jan 2025 – Present</em>
+                        <ul class="toggleContent hide">
+                            <li>Designed, developed, and launched client websites with full domain setup and hosting configuration.</li>
+                            <li>Implemented on-page SEO strategies, including optimized metadata, headings, and keywords to improve search engine visibility.</li>
+                            <li>Created responsive layouts using HTML, CSS, and JavaScript to ensure seamless functionality across all screen sizes and devices.</li>
+                            <li>Provided ongoing website maintenance, content updates, and performance enhancements based on client feedback and analytics.</li>
+                          </ul>
+                          <button class="toggleBtn">More</button>
+                    </div>
+                    <!-- end content -->
 
-            <section id="content"></section>
-       
-            
-            
+                    <div class="content">
+                        <h3 class="content-sub-title">Front-End Developer (Academic Projects)</h3>
+                        <strong>University of North Florida – Course Projects</strong>
+                        <em>August 2024 – December 2024</em>
+                        <ul class="toggleContent hide">
+                            <li>Took ownership of front-end development in a group project focused on converting a paper-based application form into a responsive web application.
+                            </li>
+                            <li>Built a fully functional interface using HTML, Bootstrap, and JavaScript; implemented client-side validation to provide real-time user feedback and reduce form submission errors.
+                            </li>
+                            <li>Collaborated with a teammate responsible for UX case study analysis; incorporated feedback into interface revisions to ensure alignment with accessibility and usability standards.
+                            </li>
+                            <li>Managed GitHub version control and resolved merge conflicts after a teammate pushed outdated code, maintaining the integrity of the final version.
+                            </li>
+                        </ul>
+                        <button class="toggleBtn">More</button>
+                    </div>
+                    <!-- end content -->
+
+                    <div class="content">
+                        <h3 class="content-sub-title">Graphic Designer</h3>
+                        <strong>Florida State College at Jacksonville – Student Engagement</strong>
+                        <em>October 2019 – February 2020</em>
+                        <ul class="toggleContent hide">
+                            <li>Created visually compelling flyers, posters, and digital graphics to promote student engagement events and campus activities.</li>
+                            <li>Collaborated with student organizations and faculty to design promotional materials tailored to event goals and target audiences.</li>
+                            <li>Managed multiple design requests simultaneously while meeting strict deadlines and maintaining brand consistency.</li>
+                            <li>Utilized Adobe Creative Suite (Photoshop, Illustrator, InDesign) to produce both print and digital media assets.</li>
+                            <li>Contributed to the visual branding of college-wide campaigns, enhancing student participation and visibility of campus programs.</li>
+                          </ul>
+                          <button class="toggleBtn">More</button>
+                          
+                    </div>
+                    <!-- end content -->
+
+                    <div class="content">
+                        <h3 class="content-sub-title">Full-Stack Developer (Capstone UI/Database Integration)</h3>
+                        <strong>University of North Florida – Web Application Development</strong>
+                        <em>May 2024 – July 2024</em>
+                        <ul class="toggleContent hide">
+                            <li>Reconstructed the IBM website interface for a project simulating UI/UX improvements and backend integration for a corporate site..
+                            </li>
+                            <li>Developed and styled the full user interface, then built and connected a functional SQL database to support user data handling within an ASP.NET (C#) environment.
+                            </li>
+                            <li>Designed database schemas, established relationships, and tested CRUD operations to ensure seamless integration between front-end and back-end systems.
+                            </li>
+                            <li>Collaborated with group members responsible for documentation and case study presentation while leading the technical execution of both front-end and database components.
+                            </li>
+                        </ul>
+                        <button class="toggleBtn">More</button>
+                    </div>
+                    <!-- end content -->
+
+                </div>  
+                <!-- end content container -->
+            </section>
+
+            <section class="skills">
+                <div class="content-container">
+
+                    <div class="content">
+                        <h2 class="content-title">Programming Languages</h2>
+                        <ul class="icon-container">
+                            <li>Javascript
+                                <img src="/images/icons8-javascript.svg" alt="" class="icon">
+                            </li>
+                            <li>Bootstrap
+                                <img src="/images/icons8-bootstrap-500.svg" alt="" class="icon">
+                            </li>
+                            <li>React
+                                <img src="/images/icons8-react.svg" alt="" class="icon">
+                            </li>
+                            <li>Spring Boot
+                                <img src="/images/icons8-spring-boot.svg" alt="" class="icon">
+                            </li>
+                            <li>XML
+                                <img src="/images/xml-svgrepo-com.svg" alt="" class="icon">
+                            </li>
+                            <li>Thymeleaf
+                                <img src="/images/icons8-thymeleaf-480.svg" alt="" class="icon">
+                            </li>
+                            <li>Java
+                                <img src="images/icons8-java-500.svg" alt="" class="icon">
+                            </li>
+                            <li>Python
+                                <img src="/images/icons8-python-500.svg" alt="" class="icon">
+                            </li>
+                            <li>C
+                                <img src="/images/icons8-c-programming-500.svg" alt="" class="icon">
+                            </li>
+                            <li>MySQL
+                                <img src="/images/icons8-mysql-logo-500.svg" alt="" class="icon">
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- end content -->
+
+                    <div class="content">
+                        <h2 class="content-title">Design Tools</h2>
+                        <ul class="icon-container">
+                            <li>UI/UX Design
+                                <img src="/images/ux-design-svgrepo-com.svg"  class="icon" alt="">
+                            </li>
+                            <li>Figma
+                                <img src="/images/icons8-figma-500.svg" alt="" class="icon">
+                            </li>
+                            <li>Adobe XD
+                                <img src="/images/icons8-adobe-xd-500.svg" alt="" class="icon">
+                            </li>
+                            <li>Canva
+                                <img src="/images/icons8-canva-500.svg" alt="" class="icon">
+                            </li>
+                            <li>Photoshop
+                                <img src="/images/icons8-photoshop-500.svg" alt="" class="icon">
+                            </li>
+                            <li>Illustrator
+                                <img src="/images/icons8-illustrator-500.svg" alt="" class="icon">
+                            </li>
+                            <li>Premier Pro
+                                <img src="/images/icons8-adobe-premiere-pro-500.svg" alt="" class="icon">
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- end content -->
+                    
+                </div>
+                <!-- end content container -->
+            </section>
+
+            <section class="projects">
+                <h2 class="content-title">Projects</h2>
+
+                <div class="content-container">
+
+                    <div class="content">
+                        <h3 class="content-sub-title">Full-Stack Projects</h3>
+
+                        <div class="icon-container">
+                            <img src="/images/icons8-thymeleaf-480.svg" alt="" class="icon">
+                            <img src="/images/icons8-java-500.svg" alt="" class="icon">
+                            <img src="/images/icons8-spring-boot.svg" alt="" class="icon">
+                            <img src="/images/icons8-react.svg" alt="" class="icon">
+                        </div>
+
+                        <button hx-get="/pages/fullstackModal.html"
+                                hx-target="body"
+                                hx-swap="beforeend">
+                                View
+                        </button>
+                    </div>
+                    <!-- end content -->
+
+                    <div class="content">
+                        <h3 class="content-sub-title">Frontend Projects</h3>
+
+                        <div class="icon-container">
+                            <img src="/images/icons8-bootstrap-500.svg" alt="" class="icon">
+                            <img src="/images/icons8-react.svg" alt="" class="icon">
+                            <img src="/images/icons8-javascript.svg" alt="" class="icon">
+                        </div>
+
+                        <button hx-get="/pages/frontendModal.html"
+                                hx-target="body"
+                                hx-swap="beforeend">
+                                View
+                        </button>
+                    </div>
+                    <!-- end content -->
+
+                    <div class="content">                        
+                        <h3 class="content-sub-title">UI Projects</h3>
+
+                        <div class="icon-container">
+                            <img src="/images/icons8-adobe-xd-500.svg" alt="" class="icon">
+                            <img src="/images/icons8-figma-500.svg" alt="" class="icon">
+                        </div>
+
+                        <button hx-get="/pages/uiModal.html"
+                                hx-target="body"
+                                hx-swap="beforeend">
+                                View
+                        </button>
+                    </div>
+                    <!-- end content -->
+
+                    <div class="content">
+                        <h3 class="content-sub-title">Mini Projects</h3>
+
+                        <div class="icon-container">
+                            <img src="/images/icons8-c-programming-500.svg" alt="" class="icon">
+                            <img src="/images/icons8-java-500.svg" alt="" class="icon">
+                            <img src="/images/xml-svgrepo-com.svg" alt="" class="icon">
+                            <img src="/images/icons8-python-500.svg" alt="" class="icon">
+                        </div>
+
+                        <button hx-get="/pages/miniProjectsModal.html"
+                                hx-target="body"
+                                hx-swap="beforeend">
+                                View
+                        </button>
+                    </div>
+                    <!-- end content -->
+
+                </div>
+                <!-- end content container -->
+            </section>
+
+            <section class="contact">
+                <h2 class="content-title">Contact</h2>
+
+                <div class="content-container">
+                    <div class="content">
+                        <form method="get" id="form">
+
+                            <div class="form-element">
+                              <label for="fname">First Name </label>
+                              <input type="text" name="fname" id="fname" required />
+                            </div>
+
+                            <div class="form-element">
+                              <label for="lname">Last Name </label>
+                              <input type="text" name="lname" id="lname" required />
+                            </div>
+
+                            <div class="form-element">
+                              <label for="company">Company Name </label>
+                              <input type="text" name="company" id="company" required />
+                            </div>
+
+                            <div class="form-element">
+                              <label for="email">Email </label>
+                              <input type="email" name="email" id="email" required />
+                            </div>
+
+                            <div class="form-element">
+                              <label for="phone">Phone </label>
+                              <input type="tel" name="phone" id="phone" required />
+                            </div>
+
+                            <div class="form-element">
+                              <label for="message">Message </label>
+                              <textarea name="message" id="message"></textarea>
+                            </div>
+
+                            <div class="form-element">
+                              <button type="submit" value="Submit">Submit</button>
+                            </div>
+                        </form>
+                        <!-- end form -->
+                    </div>
+                    <!-- end content -->
+
+                </div>
+                <!-- end content container -->
+            </section>
                         
         </div>
 </body>
