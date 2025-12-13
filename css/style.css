@@ -110,6 +110,11 @@ body {
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: 100%;
+
+}
+.card span{
+    font-size: 1.0em;
+    font-weight: normal;
 }
 
 .card:hover {
@@ -121,18 +126,18 @@ body {
     color: var(--bg-card) !important;
 }
 
-.skill-badge {
+.badge {
     background-color: var(--bg-secondary);
     color: var(--text-primary);
     border: 1px solid var(--accent);
-    padding: 8px 16px;
+    padding: 16px 16px;
     border-radius: 20px;
     display: inline-block;
     margin: 5px;
     transition: all 0.3s ease;
 }
 
-.skill-badge:hover {
+.badge:hover {
     background-color: var(--accent);
     transform: scale(1.05);
 }
